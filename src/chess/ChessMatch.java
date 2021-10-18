@@ -14,9 +14,9 @@ public class ChessMatch {
     }
 
     public ChessPiece[][] getPieces() {
-        ChessPiece[][] mat = new ChessPiece[board.getRows()][board.getColumn()];
+        ChessPiece[][] mat = new ChessPiece[board.getRows()][board.getColumns()];
         for (int row = 0; row<board.getRows(); row++) {
-            for (int column = 0; column<board.getColumn(); column++) {
+            for (int column = 0; column<board.getColumns(); column++) {
                 mat[row][column] = (ChessPiece) board.piece(row, column);
             }
         }
